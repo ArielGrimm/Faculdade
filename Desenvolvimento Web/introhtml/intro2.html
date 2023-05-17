@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 250px;
+            height: 25px;
+            background-color: greenyellow;
+            border: 20px black dotted;
+        }
+        span{
+            background-color: orange;
+            border: 20px black dotted;
+        }
+    </style>
+</head>
+<body>
+    <h3>Lista de Definição</h3>
+        <dl>
+            <dt>Características do Produto</dt>
+            <dd>Mais opções de cores</dd>
+            <dd>Novos Modelos e Formatos</dd>
+            <dt>Novos Itens de Segurança</dt>
+            <dd>Agora com Freios que Funcionam</dd>
+        </dl>
+        <div>
+            Se eu escrever qq coisa dentro da div
+        </div>
+        <p>
+            <strong>Texto</strong> de 
+            um <b>parágrafo</b> com
+            <span>palavra</span> marcada com o elemento SPAN
+        </p>
+        <small><em>Direitos</em> reservados para <i>UNIVILLE&copy;</i></small>
+        <code>code</code>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" 
+            stroke="green" stroke-width="4" fill="yellow" />
+        </svg>
+        <canvas id="myCanvas" width="200" 
+            height="100" style="border:1px solid #000000;">
+        </canvas>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            
+            // Create gradient
+            var grd = ctx.createLinearGradient(0, 0, 200, 0);
+            grd.addColorStop(0, "pink");
+            grd.addColorStop(1, "green");
+            
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(10, 10, 150, 80);
+            </script>
+</body>
+</html>
